@@ -46,7 +46,6 @@ const x = [];
 for(let i = 0;i<=40;i++){x.push(['.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.'])};
 
 for(let t=0;t<1;t+=0.005){
-//calc, i think this is the problem, why's that i dont know
 const d1 = tsolve(arr1,arr2,t);
 const d2 = tsolve(arr2,arr3,t);
 const d3 = tsolve(arr3,arr4,t);
