@@ -30,16 +30,9 @@ let arr4 = ['',''];
  arr3[1] = Number(arr3[1])
  arr4[1] = Number(arr4[1])
 console.log(arr1,arr2,arr3,arr4)
-const pyth = (x1,y1,x2,y2) => {
-const x = Math.abs(x1-x2)**2;
-const y = Math.abs(y1-y2)**2;
-return Math.sqrt(x+y)
-}
 const tsolve = (arr=[0,0],arr2=[0,0],t=0) => {
-const ang = Math.atan2(arr[1]-arr2[1],arr[0]-arr2[0])+Math.PI;
-const dst = pyth(...arr,...arr2);
-const x = arr[0]+(Math.cos(ang)*(dst*t));
-const y = arr[1]+(Math.sin(ang)*(dst*t));
+const x = arr[0]+(arr2[0]-arr[0])*t;
+const y = arr[1]+(arr2[1]-arr[1])*t
 return [x,y]
 }
 const x = [];
